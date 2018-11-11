@@ -17,7 +17,9 @@ android {
         }
     }
     sourceSets {
-        main { java.srcDirs = ['src/main/java', 'src/main/java/menu', 'src/main/java/men'] }
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/menu', 'src/main/java/men', 'src/main/java/2']
+        }
     }
 }
 
