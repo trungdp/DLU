@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGray"
-    tools:context=".Contact$AuthActivity">
+    tools:context=".Auth.AuthActivity">
 
     <LinearLayout
         android:layout_height="match_parent"
@@ -47,7 +47,7 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"/>
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/etId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
@@ -67,7 +67,7 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"/>
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/etPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border"
@@ -87,6 +87,7 @@
                     android:layout_height="50dp"
                     android:text="@string/ng_nh_p"
                     android:textSize="25sp"
+                    android:textColor="#fff"
                     android:background="@color/primaryGreen"
                     android:backgroundTintMode="multiply"/>
             </LinearLayout>
