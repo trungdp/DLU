@@ -25,10 +25,10 @@ public class CustomAlertDialog  {
         dialog.show();
     }
 
-    protected CustomAlertDialog(Activity activity,
-                                String message,
-                                String cancelTitle,
-                                CustomAlertDialogAction cancelAction) {
+    public CustomAlertDialog(Activity activity,
+                             String message,
+                             String cancelTitle,
+                             CustomAlertDialogAction cancelAction) {
         this.activity = activity;
         this.message = message;
         this.cancelTitle = cancelTitle;

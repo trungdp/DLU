@@ -7,11 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import Database.Student;
-import Database.StudentManager;
-import vn.edu.itdlu.a1610234.dhdl.MenuActivity;
+import vn.edu.itdlu.a1610234.dhdl.Database.Student;
+import vn.edu.itdlu.a1610234.dhdl.Database.StudentManager;
+import vn.edu.itdlu.a1610234.dhdl.Home.MainActivity;
 import vn.edu.itdlu.a1610234.dhdl.R;
-import vn.edu.itdlu.a1610234.dhdl.SubjectsInfoDialog;
 
 public class AuthActivity extends AppCompatActivity {
     protected final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
@@ -27,23 +26,17 @@ public class AuthActivity extends AppCompatActivity {
         testButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //                Log.i("1234567", "start");
-                Intent intent = new Intent(AuthActivity.this, MenuActivity.class);
+                Intent intent = new Intent(AuthActivity.this, MainActivity.class);
                 //                intent.putExtra(EXTRA_MESSAGE,"12345");
-                //                startActivity(intent);
+                startActivity(intent);
                 //                Log.i("1234567", "end");
-                //                new CustomAlertDialog(
-                //                        AuthActivity.this,
-                //                        "Wrong Password",
-                //                        "OK",
-                //                        null)
-                //                        .show();
-                new SubjectsInfoDialog(
-                        AuthActivity.this,
-                        "MAS1334",
-                        "Nguyen ly lap trinh huong doi tuong",
-                        "bat buoc",
-                        4).show();
+//                new CustomAlertDialog(
+//                        AuthActivity.this,
+//                        "Wrong Password",
+//                        "OK",
+//                        null)
+//                        .show();
+
             }
         });
 

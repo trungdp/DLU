@@ -1,4 +1,4 @@
-package Database;
+package vn.edu.itdlu.a1610234.dhdl.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import vn.edu.itdlu.a1610234.dhdl.Database.Student;
 
 public class StudentManager extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "StudentManager";

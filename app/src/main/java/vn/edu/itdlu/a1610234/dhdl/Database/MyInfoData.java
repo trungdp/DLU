@@ -1,4 +1,4 @@
-package Database;
+package vn.edu.itdlu.a1610234.dhdl.Database;
 
 import android.content.ContentValues;
 import android.content.Context;

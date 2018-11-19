@@ -1,4 +1,4 @@
-package Database;
+package vn.edu.itdlu.a1610234.dhdl.Database;
 
 
 public class Student {
