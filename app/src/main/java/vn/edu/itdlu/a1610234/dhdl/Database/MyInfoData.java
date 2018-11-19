@@ -18,7 +18,7 @@ public class MyInfoData extends SQLiteOpenHelper {
     private static final String PASSWORD ="password";
 
     public MyInfoData(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
@@ -45,8 +45,17 @@ public class MyInfoData extends SQLiteOpenHelper {
         db.close();
     }
 
+    public int updateMyInfo(Student student){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(NAME,student.getName());
+        return db.update(TABLE_NAME,values,ID +"=?",new String[] { student.getId()});
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
+        onCreate(db);
     }
 }
