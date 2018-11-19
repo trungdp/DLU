@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import vn.edu.itdlu.a1610234.dhdl.Home.HomeActivity;
+import vn.edu.itdlu.a1610234.dhdl.Home.MainActivity;
 
 public class MenuActivity extends AppCompatActivity {
     ArrayList<Contact> contacts;
@@ -115,7 +115,7 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
-        Intent intent = new Intent(MenuActivity.this, HomeActivity.class);
+        Intent intent = new Intent(MenuActivity.this, MainActivity.class);
         switch (item.getItemId()) {
 //            case R.id.new_game:
 //                newGame();

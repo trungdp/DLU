@@ -7,14 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import vn.edu.itdlu.a1610234.dhdl.CustomAlertDialog;
 import vn.edu.itdlu.a1610234.dhdl.Database.Student;
 import vn.edu.itdlu.a1610234.dhdl.Database.StudentManager;
-import vn.edu.itdlu.a1610234.dhdl.Home.HomeActivity;
 import vn.edu.itdlu.a1610234.dhdl.Home.MainActivity;
-import vn.edu.itdlu.a1610234.dhdl.MenuActivity;
 import vn.edu.itdlu.a1610234.dhdl.R;
-import vn.edu.itdlu.a1610234.dhdl.SubjectsInfoDialog;
 
 public class AuthActivity extends AppCompatActivity {
     protected final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
