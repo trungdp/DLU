@@ -1,4 +1,4 @@
-package vn.edu.itdlu.a1610234.dhdl.Auth;
+package vn.edu.itdlu.a1610234.dhdl.Home;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import vn.edu.itdlu.a1610234.dhdl.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_menu:
                     mTextMessage.setText(R.string.title_dashboard);
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
             }

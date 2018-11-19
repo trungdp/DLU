@@ -24,7 +24,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Auth.AuthActivity" />
         </activity>
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".Home.HomeActivity" />
+        <activity
+            android:name=".Home.MainActivity"
+            android:label="@string/title_activity_main"></activity>
     </application>
 
 </manifest>

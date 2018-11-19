@@ -17,6 +17,12 @@ public class SubjectsInfoDialog {
         this.number = number;
         this.dialog = createDialog();
     }
+    //                new SubjectsInfoDialog(
+//                        AuthActivity.this,
+//                        "MAS1334",
+//                        "Nguyen ly lap trinh huong doi tuong",
+//                        "bat buoc",
+//                        4).show();
 
     private Dialog createDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
